@@ -16,6 +16,7 @@
 		2BF9D9D91C658D2E006A17AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9D9D71C658D2E006A17AD /* LaunchScreen.storyboard */; };
 		2BF9D9E41C658D2E006A17AD /* _6_02_06__________Cell_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9D9E31C658D2E006A17AD /* _6_02_06__________Cell_Tests.m */; };
 		2BF9D9EF1C658D2E006A17AD /* _6_02_06__________Cell_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9D9EE1C658D2E006A17AD /* _6_02_06__________Cell_UITests.m */; };
+		2BF9DA021C658EED006A17AD /* microblog.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9DA011C658EED006A17AD /* microblog.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		2BF9D9EA1C658D2E006A17AD /* 16-02-06-熔炼-(微博自定义Cell)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "16-02-06-熔炼-(微博自定义Cell)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BF9D9EE1C658D2E006A17AD /* _6_02_06__________Cell_UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_6_02_06__________Cell_UITests.m"; sourceTree = "<group>"; };
 		2BF9D9F01C658D2E006A17AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BF9DA011C658EED006A17AD /* microblog.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = microblog.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		2BF9D9C61C658D2E006A17AD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2BF9DA011C658EED006A17AD /* microblog.plist */,
 				2BF9D9C71C658D2E006A17AD /* main.m */,
 			);
 			name = "Supporting Files";
@@ -289,6 +292,7 @@
 				2BF9D9D91C658D2E006A17AD /* LaunchScreen.storyboard in Resources */,
 				2BF9D9D61C658D2E006A17AD /* Assets.xcassets in Resources */,
 				2BF9D9D11C658D2E006A17AD /* Main.storyboard in Resources */,
+				2BF9DA021C658EED006A17AD /* microblog.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
