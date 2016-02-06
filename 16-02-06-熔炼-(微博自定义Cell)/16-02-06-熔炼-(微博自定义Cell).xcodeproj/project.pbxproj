@@ -17,6 +17,7 @@
 		2BF9D9E41C658D2E006A17AD /* _6_02_06__________Cell_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9D9E31C658D2E006A17AD /* _6_02_06__________Cell_Tests.m */; };
 		2BF9D9EF1C658D2E006A17AD /* _6_02_06__________Cell_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9D9EE1C658D2E006A17AD /* _6_02_06__________Cell_UITests.m */; };
 		2BF9DA021C658EED006A17AD /* microblog.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9DA011C658EED006A17AD /* microblog.plist */; };
+		2BF9DA051C65D121006A17AD /* CDMicroBlog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9DA041C65D121006A17AD /* CDMicroBlog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		2BF9D9EE1C658D2E006A17AD /* _6_02_06__________Cell_UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_6_02_06__________Cell_UITests.m"; sourceTree = "<group>"; };
 		2BF9D9F01C658D2E006A17AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BF9DA011C658EED006A17AD /* microblog.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = microblog.plist; sourceTree = "<group>"; };
+		2BF9DA031C65D121006A17AD /* CDMicroBlog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDMicroBlog.h; sourceTree = "<group>"; };
+		2BF9DA041C65D121006A17AD /* CDMicroBlog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDMicroBlog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +159,8 @@
 		2BF9D9FD1C658E1E006A17AD /* model */ = {
 			isa = PBXGroup;
 			children = (
+				2BF9DA031C65D121006A17AD /* CDMicroBlog.h */,
+				2BF9DA041C65D121006A17AD /* CDMicroBlog.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -317,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BF9DA051C65D121006A17AD /* CDMicroBlog.m in Sources */,
 				2BF9D9D41C658D2E006A17AD /* _6_02_06__________Cell_.xcdatamodeld in Sources */,
 				2BF9D9CE1C658D2E006A17AD /* ViewController.m in Sources */,
 				2BF9D9CB1C658D2E006A17AD /* AppDelegate.m in Sources */,
