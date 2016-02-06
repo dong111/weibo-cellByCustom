@@ -103,15 +103,11 @@
 		2BF9D9C51C658D2E006A17AD /* 16-02-06-熔炼-(微博自定义Cell) */ = {
 			isa = PBXGroup;
 			children = (
-				2BF9D9C91C658D2E006A17AD /* AppDelegate.h */,
-				2BF9D9CA1C658D2E006A17AD /* AppDelegate.m */,
-				2BF9D9CC1C658D2E006A17AD /* ViewController.h */,
-				2BF9D9CD1C658D2E006A17AD /* ViewController.m */,
-				2BF9D9CF1C658D2E006A17AD /* Main.storyboard */,
-				2BF9D9D51C658D2E006A17AD /* Assets.xcassets */,
-				2BF9D9D71C658D2E006A17AD /* LaunchScreen.storyboard */,
-				2BF9D9DA1C658D2E006A17AD /* Info.plist */,
-				2BF9D9D21C658D2E006A17AD /* _6_02_06__________Cell_.xcdatamodeld */,
+				2BF9DA001C658E4E006A17AD /* Application */,
+				2BF9D9FF1C658E38006A17AD /* controller */,
+				2BF9D9FE1C658E32006A17AD /* view */,
+				2BF9D9FD1C658E1E006A17AD /* model */,
+				2BF9D9FC1C658E12006A17AD /* other */,
 				2BF9D9C61C658D2E006A17AD /* Supporting Files */,
 			);
 			path = "16-02-06-熔炼-(微博自定义Cell)";
@@ -141,6 +137,50 @@
 				2BF9D9F01C658D2E006A17AD /* Info.plist */,
 			);
 			path = "16-02-06-熔炼-(微博自定义Cell)UITests";
+			sourceTree = "<group>";
+		};
+		2BF9D9FC1C658E12006A17AD /* other */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9D9D51C658D2E006A17AD /* Assets.xcassets */,
+				2BF9D9D71C658D2E006A17AD /* LaunchScreen.storyboard */,
+				2BF9D9DA1C658D2E006A17AD /* Info.plist */,
+				2BF9D9D21C658D2E006A17AD /* _6_02_06__________Cell_.xcdatamodeld */,
+			);
+			name = other;
+			sourceTree = "<group>";
+		};
+		2BF9D9FD1C658E1E006A17AD /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		2BF9D9FE1C658E32006A17AD /* view */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9D9CF1C658D2E006A17AD /* Main.storyboard */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		2BF9D9FF1C658E38006A17AD /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9D9CC1C658D2E006A17AD /* ViewController.h */,
+				2BF9D9CD1C658D2E006A17AD /* ViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		2BF9DA001C658E4E006A17AD /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9D9C91C658D2E006A17AD /* AppDelegate.h */,
+				2BF9D9CA1C658D2E006A17AD /* AppDelegate.m */,
+			);
+			name = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
