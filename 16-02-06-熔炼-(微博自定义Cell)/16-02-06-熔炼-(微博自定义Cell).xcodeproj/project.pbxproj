@@ -18,6 +18,7 @@
 		2BF9DA021C658EED006A17AD /* microblog.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9DA011C658EED006A17AD /* microblog.plist */; };
 		2BF9DA051C65D121006A17AD /* CDMicroBlog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9DA041C65D121006A17AD /* CDMicroBlog.m */; };
 		2BF9DA081C65D879006A17AD /* CDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9DA071C65D879006A17AD /* CDTableViewController.m */; };
+		2BF9DA0E1C65F67E006A17AD /* CDMicroBlogCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9DA0D1C65F67E006A17AD /* CDMicroBlogCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		2BF9DA041C65D121006A17AD /* CDMicroBlog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDMicroBlog.m; sourceTree = "<group>"; };
 		2BF9DA061C65D879006A17AD /* CDTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTableViewController.h; sourceTree = "<group>"; };
 		2BF9DA071C65D879006A17AD /* CDTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTableViewController.m; sourceTree = "<group>"; };
+		2BF9DA0C1C65F67E006A17AD /* CDMicroBlogCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDMicroBlogCell.h; sourceTree = "<group>"; };
+		2BF9DA0D1C65F67E006A17AD /* CDMicroBlogCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDMicroBlogCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				2BF9D9CF1C658D2E006A17AD /* Main.storyboard */,
+				2BF9DA0C1C65F67E006A17AD /* CDMicroBlogCell.h */,
+				2BF9DA0D1C65F67E006A17AD /* CDMicroBlogCell.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -325,6 +330,7 @@
 				2BF9DA051C65D121006A17AD /* CDMicroBlog.m in Sources */,
 				2BF9D9D41C658D2E006A17AD /* _6_02_06__________Cell_.xcdatamodeld in Sources */,
 				2BF9DA081C65D879006A17AD /* CDTableViewController.m in Sources */,
+				2BF9DA0E1C65F67E006A17AD /* CDMicroBlogCell.m in Sources */,
 				2BF9D9CB1C658D2E006A17AD /* AppDelegate.m in Sources */,
 				2BF9D9C81C658D2E006A17AD /* main.m in Sources */,
 			);
