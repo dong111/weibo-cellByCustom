@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BF9D9C81C658D2E006A17AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9D9C71C658D2E006A17AD /* main.m */; };
+		2BF9D9CB1C658D2E006A17AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9D9CA1C658D2E006A17AD /* AppDelegate.m */; };
+		2BF9D9CE1C658D2E006A17AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9D9CD1C658D2E006A17AD /* ViewController.m */; };
+		2BF9D9D11C658D2E006A17AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9D9CF1C658D2E006A17AD /* Main.storyboard */; };
+		2BF9D9D41C658D2E006A17AD /* _6_02_06__________Cell_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9D9D21C658D2E006A17AD /* _6_02_06__________Cell_.xcdatamodeld */; };
+		2BF9D9D61C658D2E006A17AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9D9D51C658D2E006A17AD /* Assets.xcassets */; };
+		2BF9D9D91C658D2E006A17AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9D9D71C658D2E006A17AD /* LaunchScreen.storyboard */; };
+		2BF9D9E41C658D2E006A17AD /* _6_02_06__________Cell_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9D9E31C658D2E006A17AD /* _6_02_06__________Cell_Tests.m */; };
+		2BF9D9EF1C658D2E006A17AD /* _6_02_06__________Cell_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9D9EE1C658D2E006A17AD /* _6_02_06__________Cell_UITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BF9D9E01C658D2E006A17AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BF9D9BB1C658D2E006A17AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BF9D9C21C658D2E006A17AD;
+			remoteInfo = "16-02-06-熔炼-(微博自定义Cell)";
+		};
+		2BF9D9EB1C658D2E006A17AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BF9D9BB1C658D2E006A17AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BF9D9C21C658D2E006A17AD;
+			remoteInfo = "16-02-06-熔炼-(微博自定义Cell)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2BF9D9C31C658D2E006A17AD /* 16-02-06-熔炼-(微博自定义Cell).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "16-02-06-熔炼-(微博自定义Cell).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BF9D9C71C658D2E006A17AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2BF9D9C91C658D2E006A17AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2BF9D9CA1C658D2E006A17AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2BF9D9CC1C658D2E006A17AD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2BF9D9CD1C658D2E006A17AD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2BF9D9D01C658D2E006A17AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2BF9D9D31C658D2E006A17AD /* _6_02_06__________Cell_.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "_6_02_06__________Cell_.xcdatamodel"; sourceTree = "<group>"; };
+		2BF9D9D51C658D2E006A17AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BF9D9D81C658D2E006A17AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2BF9D9DA1C658D2E006A17AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BF9D9DF1C658D2E006A17AD /* 16-02-06-熔炼-(微博自定义Cell)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "16-02-06-熔炼-(微博自定义Cell)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BF9D9E31C658D2E006A17AD /* _6_02_06__________Cell_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_6_02_06__________Cell_Tests.m"; sourceTree = "<group>"; };
+		2BF9D9E51C658D2E006A17AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BF9D9EA1C658D2E006A17AD /* 16-02-06-熔炼-(微博自定义Cell)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "16-02-06-熔炼-(微博自定义Cell)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BF9D9EE1C658D2E006A17AD /* _6_02_06__________Cell_UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_6_02_06__________Cell_UITests.m"; sourceTree = "<group>"; };
+		2BF9D9F01C658D2E006A17AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BF9D9C01C658D2E006A17AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF9D9DC1C658D2E006A17AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF9D9E71C658D2E006A17AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BF9D9BA1C658D2E006A17AD = {
+			isa = PBXGroup;
+			children = (
+				2BF9D9C51C658D2E006A17AD /* 16-02-06-熔炼-(微博自定义Cell) */,
+				2BF9D9E21C658D2E006A17AD /* 16-02-06-熔炼-(微博自定义Cell)Tests */,
+				2BF9D9ED1C658D2E006A17AD /* 16-02-06-熔炼-(微博自定义Cell)UITests */,
+				2BF9D9C41C658D2E006A17AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2BF9D9C41C658D2E006A17AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9D9C31C658D2E006A17AD /* 16-02-06-熔炼-(微博自定义Cell).app */,
+				2BF9D9DF1C658D2E006A17AD /* 16-02-06-熔炼-(微博自定义Cell)Tests.xctest */,
+				2BF9D9EA1C658D2E006A17AD /* 16-02-06-熔炼-(微博自定义Cell)UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BF9D9C51C658D2E006A17AD /* 16-02-06-熔炼-(微博自定义Cell) */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9D9C91C658D2E006A17AD /* AppDelegate.h */,
+				2BF9D9CA1C658D2E006A17AD /* AppDelegate.m */,
+				2BF9D9CC1C658D2E006A17AD /* ViewController.h */,
+				2BF9D9CD1C658D2E006A17AD /* ViewController.m */,
+				2BF9D9CF1C658D2E006A17AD /* Main.storyboard */,
+				2BF9D9D51C658D2E006A17AD /* Assets.xcassets */,
+				2BF9D9D71C658D2E006A17AD /* LaunchScreen.storyboard */,
+				2BF9D9DA1C658D2E006A17AD /* Info.plist */,
+				2BF9D9D21C658D2E006A17AD /* _6_02_06__________Cell_.xcdatamodeld */,
+				2BF9D9C61C658D2E006A17AD /* Supporting Files */,
+			);
+			path = "16-02-06-熔炼-(微博自定义Cell)";
+			sourceTree = "<group>";
+		};
+		2BF9D9C61C658D2E006A17AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9D9C71C658D2E006A17AD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2BF9D9E21C658D2E006A17AD /* 16-02-06-熔炼-(微博自定义Cell)Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9D9E31C658D2E006A17AD /* _6_02_06__________Cell_Tests.m */,
+				2BF9D9E51C658D2E006A17AD /* Info.plist */,
+			);
+			path = "16-02-06-熔炼-(微博自定义Cell)Tests";
+			sourceTree = "<group>";
+		};
+		2BF9D9ED1C658D2E006A17AD /* 16-02-06-熔炼-(微博自定义Cell)UITests */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9D9EE1C658D2E006A17AD /* _6_02_06__________Cell_UITests.m */,
+				2BF9D9F01C658D2E006A17AD /* Info.plist */,
+			);
+			path = "16-02-06-熔炼-(微博自定义Cell)UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BF9D9C21C658D2E006A17AD /* 16-02-06-熔炼-(微博自定义Cell) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BF9D9F31C658D2E006A17AD /* Build configuration list for PBXNativeTarget "16-02-06-熔炼-(微博自定义Cell)" */;
+			buildPhases = (
+				2BF9D9BF1C658D2E006A17AD /* Sources */,
+				2BF9D9C01C658D2E006A17AD /* Frameworks */,
+				2BF9D9C11C658D2E006A17AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "16-02-06-熔炼-(微博自定义Cell)";
+			productName = "16-02-06-熔炼-(微博自定义Cell)";
+			productReference = 2BF9D9C31C658D2E006A17AD /* 16-02-06-熔炼-(微博自定义Cell).app */;
+			productType = "com.apple.product-type.application";
+		};
+		2BF9D9DE1C658D2E006A17AD /* 16-02-06-熔炼-(微博自定义Cell)Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BF9D9F61C658D2E006A17AD /* Build configuration list for PBXNativeTarget "16-02-06-熔炼-(微博自定义Cell)Tests" */;
+			buildPhases = (
+				2BF9D9DB1C658D2E006A17AD /* Sources */,
+				2BF9D9DC1C658D2E006A17AD /* Frameworks */,
+				2BF9D9DD1C658D2E006A17AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BF9D9E11C658D2E006A17AD /* PBXTargetDependency */,
+			);
+			name = "16-02-06-熔炼-(微博自定义Cell)Tests";
+			productName = "16-02-06-熔炼-(微博自定义Cell)Tests";
+			productReference = 2BF9D9DF1C658D2E006A17AD /* 16-02-06-熔炼-(微博自定义Cell)Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2BF9D9E91C658D2E006A17AD /* 16-02-06-熔炼-(微博自定义Cell)UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BF9D9F91C658D2E006A17AD /* Build configuration list for PBXNativeTarget "16-02-06-熔炼-(微博自定义Cell)UITests" */;
+			buildPhases = (
+				2BF9D9E61C658D2E006A17AD /* Sources */,
+				2BF9D9E71C658D2E006A17AD /* Frameworks */,
+				2BF9D9E81C658D2E006A17AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BF9D9EC1C658D2E006A17AD /* PBXTargetDependency */,
+			);
+			name = "16-02-06-熔炼-(微博自定义Cell)UITests";
+			productName = "16-02-06-熔炼-(微博自定义Cell)UITests";
+			productReference = 2BF9D9EA1C658D2E006A17AD /* 16-02-06-熔炼-(微博自定义Cell)UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BF9D9BB1C658D2E006A17AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = man;
+				TargetAttributes = {
+					2BF9D9C21C658D2E006A17AD = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					2BF9D9DE1C658D2E006A17AD = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 2BF9D9C21C658D2E006A17AD;
+					};
+					2BF9D9E91C658D2E006A17AD = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 2BF9D9C21C658D2E006A17AD;
+					};
+				};
+			};
+			buildConfigurationList = 2BF9D9BE1C658D2E006A17AD /* Build configuration list for PBXProject "16-02-06-熔炼-(微博自定义Cell)" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2BF9D9BA1C658D2E006A17AD;
+			productRefGroup = 2BF9D9C41C658D2E006A17AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BF9D9C21C658D2E006A17AD /* 16-02-06-熔炼-(微博自定义Cell) */,
+				2BF9D9DE1C658D2E006A17AD /* 16-02-06-熔炼-(微博自定义Cell)Tests */,
+				2BF9D9E91C658D2E006A17AD /* 16-02-06-熔炼-(微博自定义Cell)UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BF9D9C11C658D2E006A17AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF9D9D91C658D2E006A17AD /* LaunchScreen.storyboard in Resources */,
+				2BF9D9D61C658D2E006A17AD /* Assets.xcassets in Resources */,
+				2BF9D9D11C658D2E006A17AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF9D9DD1C658D2E006A17AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF9D9E81C658D2E006A17AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BF9D9BF1C658D2E006A17AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF9D9D41C658D2E006A17AD /* _6_02_06__________Cell_.xcdatamodeld in Sources */,
+				2BF9D9CE1C658D2E006A17AD /* ViewController.m in Sources */,
+				2BF9D9CB1C658D2E006A17AD /* AppDelegate.m in Sources */,
+				2BF9D9C81C658D2E006A17AD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF9D9DB1C658D2E006A17AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF9D9E41C658D2E006A17AD /* _6_02_06__________Cell_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF9D9E61C658D2E006A17AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF9D9EF1C658D2E006A17AD /* _6_02_06__________Cell_UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2BF9D9E11C658D2E006A17AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BF9D9C21C658D2E006A17AD /* 16-02-06-熔炼-(微博自定义Cell) */;
+			targetProxy = 2BF9D9E01C658D2E006A17AD /* PBXContainerItemProxy */;
+		};
+		2BF9D9EC1C658D2E006A17AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BF9D9C21C658D2E006A17AD /* 16-02-06-熔炼-(微博自定义Cell) */;
+			targetProxy = 2BF9D9EB1C658D2E006A17AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2BF9D9CF1C658D2E006A17AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BF9D9D01C658D2E006A17AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2BF9D9D71C658D2E006A17AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BF9D9D81C658D2E006A17AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2BF9D9F11C658D2E006A17AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2BF9D9F21C658D2E006A17AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BF9D9F41C658D2E006A17AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "16-02-06-熔炼-(微博自定义Cell)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cdmq.-6-02-06----------Cell-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2BF9D9F51C658D2E006A17AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "16-02-06-熔炼-(微博自定义Cell)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cdmq.-6-02-06----------Cell-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2BF9D9F71C658D2E006A17AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "16-02-06-熔炼-(微博自定义Cell)Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cdmq.-6-02-06----------Cell-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/16-02-06-熔炼-(微博自定义Cell).app/16-02-06-熔炼-(微博自定义Cell)";
+			};
+			name = Debug;
+		};
+		2BF9D9F81C658D2E006A17AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "16-02-06-熔炼-(微博自定义Cell)Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cdmq.-6-02-06----------Cell-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/16-02-06-熔炼-(微博自定义Cell).app/16-02-06-熔炼-(微博自定义Cell)";
+			};
+			name = Release;
+		};
+		2BF9D9FA1C658D2E006A17AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "16-02-06-熔炼-(微博自定义Cell)UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cdmq.-6-02-06----------Cell-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "16-02-06-熔炼-(微博自定义Cell)";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		2BF9D9FB1C658D2E006A17AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "16-02-06-熔炼-(微博自定义Cell)UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cdmq.-6-02-06----------Cell-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "16-02-06-熔炼-(微博自定义Cell)";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BF9D9BE1C658D2E006A17AD /* Build configuration list for PBXProject "16-02-06-熔炼-(微博自定义Cell)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BF9D9F11C658D2E006A17AD /* Debug */,
+				2BF9D9F21C658D2E006A17AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BF9D9F31C658D2E006A17AD /* Build configuration list for PBXNativeTarget "16-02-06-熔炼-(微博自定义Cell)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BF9D9F41C658D2E006A17AD /* Debug */,
+				2BF9D9F51C658D2E006A17AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2BF9D9F61C658D2E006A17AD /* Build configuration list for PBXNativeTarget "16-02-06-熔炼-(微博自定义Cell)Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BF9D9F71C658D2E006A17AD /* Debug */,
+				2BF9D9F81C658D2E006A17AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2BF9D9F91C658D2E006A17AD /* Build configuration list for PBXNativeTarget "16-02-06-熔炼-(微博自定义Cell)UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BF9D9FA1C658D2E006A17AD /* Debug */,
+				2BF9D9FB1C658D2E006A17AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2BF9D9D21C658D2E006A17AD /* _6_02_06__________Cell_.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2BF9D9D31C658D2E006A17AD /* _6_02_06__________Cell_.xcdatamodel */,
+			);
+			currentVersion = 2BF9D9D31C658D2E006A17AD /* _6_02_06__________Cell_.xcdatamodel */;
+			path = "_6_02_06__________Cell_.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2BF9D9BB1C658D2E006A17AD /* Project object */;
+}
