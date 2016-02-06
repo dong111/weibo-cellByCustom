@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CDTableViewController.h
 //  16-02-06-熔炼-(微博自定义Cell)
 //
 //  Created by 陈栋 on 16/2/6.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface CDTableViewController : UITableViewController
 
 @end
-

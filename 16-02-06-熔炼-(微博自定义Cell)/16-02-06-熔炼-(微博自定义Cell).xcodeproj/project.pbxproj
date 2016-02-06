@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2BF9D9C81C658D2E006A17AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9D9C71C658D2E006A17AD /* main.m */; };
 		2BF9D9CB1C658D2E006A17AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9D9CA1C658D2E006A17AD /* AppDelegate.m */; };
-		2BF9D9CE1C658D2E006A17AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9D9CD1C658D2E006A17AD /* ViewController.m */; };
 		2BF9D9D11C658D2E006A17AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9D9CF1C658D2E006A17AD /* Main.storyboard */; };
 		2BF9D9D41C658D2E006A17AD /* _6_02_06__________Cell_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9D9D21C658D2E006A17AD /* _6_02_06__________Cell_.xcdatamodeld */; };
 		2BF9D9D61C658D2E006A17AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9D9D51C658D2E006A17AD /* Assets.xcassets */; };
@@ -18,6 +17,7 @@
 		2BF9D9EF1C658D2E006A17AD /* _6_02_06__________Cell_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9D9EE1C658D2E006A17AD /* _6_02_06__________Cell_UITests.m */; };
 		2BF9DA021C658EED006A17AD /* microblog.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9DA011C658EED006A17AD /* microblog.plist */; };
 		2BF9DA051C65D121006A17AD /* CDMicroBlog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9DA041C65D121006A17AD /* CDMicroBlog.m */; };
+		2BF9DA081C65D879006A17AD /* CDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9DA071C65D879006A17AD /* CDTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +42,6 @@
 		2BF9D9C71C658D2E006A17AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2BF9D9C91C658D2E006A17AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2BF9D9CA1C658D2E006A17AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2BF9D9CC1C658D2E006A17AD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2BF9D9CD1C658D2E006A17AD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2BF9D9D01C658D2E006A17AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BF9D9D31C658D2E006A17AD /* _6_02_06__________Cell_.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "_6_02_06__________Cell_.xcdatamodel"; sourceTree = "<group>"; };
 		2BF9D9D51C658D2E006A17AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,6 +56,8 @@
 		2BF9DA011C658EED006A17AD /* microblog.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = microblog.plist; sourceTree = "<group>"; };
 		2BF9DA031C65D121006A17AD /* CDMicroBlog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDMicroBlog.h; sourceTree = "<group>"; };
 		2BF9DA041C65D121006A17AD /* CDMicroBlog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDMicroBlog.m; sourceTree = "<group>"; };
+		2BF9DA061C65D879006A17AD /* CDTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTableViewController.h; sourceTree = "<group>"; };
+		2BF9DA071C65D879006A17AD /* CDTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,8 +176,8 @@
 		2BF9D9FF1C658E38006A17AD /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				2BF9D9CC1C658D2E006A17AD /* ViewController.h */,
-				2BF9D9CD1C658D2E006A17AD /* ViewController.m */,
+				2BF9DA061C65D879006A17AD /* CDTableViewController.h */,
+				2BF9DA071C65D879006A17AD /* CDTableViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -324,7 +324,7 @@
 			files = (
 				2BF9DA051C65D121006A17AD /* CDMicroBlog.m in Sources */,
 				2BF9D9D41C658D2E006A17AD /* _6_02_06__________Cell_.xcdatamodeld in Sources */,
-				2BF9D9CE1C658D2E006A17AD /* ViewController.m in Sources */,
+				2BF9DA081C65D879006A17AD /* CDTableViewController.m in Sources */,
 				2BF9D9CB1C658D2E006A17AD /* AppDelegate.m in Sources */,
 				2BF9D9C81C658D2E006A17AD /* main.m in Sources */,
 			);
