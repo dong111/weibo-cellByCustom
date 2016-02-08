@@ -42,7 +42,7 @@
 {
     
     CDMicroBlogCell *cell = [CDMicroBlogCell microBlogCellWithTableView:tableView];
-    
+    cell.microBlog =self.microBlogs[indexPath.row];
     
     return cell;
 }

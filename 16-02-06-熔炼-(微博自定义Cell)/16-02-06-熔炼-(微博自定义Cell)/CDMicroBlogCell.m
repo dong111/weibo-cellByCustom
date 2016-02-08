@@ -7,6 +7,7 @@
 //
 
 #import "CDMicroBlogCell.h"
+#import "CDMicroBlog.h"
 //类扩展，定义分类
 @interface CDMicroBlogCell ()
 //定义属性控件
@@ -67,15 +68,53 @@
     _microBlog = microBlog;
     
     //设置子控件显示内容
-    
+    [self setSubViewsContent];
     //设置子控件的frame
+    [self setSubViewsFrame];
     
 }
 
 //设置子控件显示内容
-
+- (void)setSubViewsContent
+{
+    if (self.microBlog==nil) {
+        return;
+    }
+    self.iconView.image = [UIImage imageNamed:self.microBlog.icon];
+    self.nameView.text = self.microBlog.name;
+    self.vipView.image = [UIImage imageNamed:@"vip"];
+    if (!self.microBlog.isVip) {
+        self.vipView.hidden = YES;
+    }
+    self.textView.text = self.microBlog.text;
+    self.pictureView.image = [UIImage imageNamed:self.microBlog.picture];
+    
+}
 
 
 //设置子控件的frame
+- (void) setSubViewsFrame
+{
+    //定义参数间距
+    CGFloat margin = 10;
+    //图像
+    CGFloat iconX = margin;
+    CGFloat iconY = margin;
+    CGFloat iconW = 30;
+    CGFloat iconH = 30;
+    self.iconView.frame = CGRectMake(iconX, iconY, iconW, iconH);
+    //计算文本大小
+    
+    
+}
+
+
+
+
+
+
+
+
+
 
 @end
