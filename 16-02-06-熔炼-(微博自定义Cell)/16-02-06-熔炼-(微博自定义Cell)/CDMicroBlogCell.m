@@ -6,8 +6,12 @@
 //  Copyright © 2016年 man. All rights reserved.
 //
 
+#define CDNameFont 15
+#define CDTextFont 14
+
 #import "CDMicroBlogCell.h"
 #import "CDMicroBlog.h"
+#import "CDFrameCalculateUtils.h"
 //类扩展，定义分类
 @interface CDMicroBlogCell ()
 //定义属性控件
@@ -45,6 +49,7 @@
         UILabel *nameView = [[UILabel alloc]init];
         [self.contentView addSubview:nameView];
         self.nameView = nameView;
+        self.nameView.font = [UIFont systemFontOfSize:CDNameFont];
         //会员
         UIImageView *vipView = [[UIImageView alloc]init];
         [self.contentView addSubview:vipView];
@@ -97,6 +102,7 @@
 {
     //定义参数间距
     CGFloat margin = 10;
+    CGSize maxSize = CGSizeMake(MAXFLOAT, MAXFLOAT);
     //图像
     CGFloat iconX = margin;
     CGFloat iconY = margin;
@@ -104,16 +110,13 @@
     CGFloat iconH = 30;
     self.iconView.frame = CGRectMake(iconX, iconY, iconW, iconH);
     //计算文本大小
+    CGSize nameSize = [CDFrameCalculateUtils sizeWithText:self.microBlog.name maxSize:maxSize fontSize:CDNameFont];
+    CGFloat nameX = iconX+iconW+margin;
+    CGFloat nameY = iconY+(iconW - nameSize.height)/2;
+    self.nameView.frame = CGRectMake(nameX, nameY, nameSize.width, nameSize.height);
     
     
 }
-
-
-
-
-
-
-
 
 
 
