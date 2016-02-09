@@ -91,9 +91,11 @@
     self.nameView.text = self.microBlog.name;
     self.vipView.image = [UIImage imageNamed:@"vip"];
     if (!self.microBlog.isVip) {
+        self.nameView.textColor = [UIColor blackColor];
         self.vipView.hidden = YES;
     }else{
         self.nameView.textColor = [UIColor redColor];
+        self.vipView.hidden = NO;
     }
     self.textView.text = self.microBlog.text;
     if (self.microBlog.picture!=nil) {
