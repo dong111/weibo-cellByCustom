@@ -28,7 +28,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //测试懒加载数据
-    NSLog(@"%@",self.microBlogs);
+//    NSLog(@"%@",self.microBlogs);
+    self.tableView.rowHeight = 200;
 }
 
 #pragma mark - Table view data source

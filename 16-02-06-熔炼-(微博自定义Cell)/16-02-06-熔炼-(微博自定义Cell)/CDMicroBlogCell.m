@@ -58,6 +58,8 @@
         UILabel *textView = [[UILabel alloc]init];
         [self.contentView addSubview:textView];
         self.textView = textView;
+        self.textView.font = [UIFont systemFontOfSize:CDTextFont];
+        self.textView.numberOfLines = 0;
         //微博图片
         UIImageView *pictureView =  [[UIImageView alloc] init];
         [self.contentView addSubview:pictureView];
@@ -90,9 +92,14 @@
     self.vipView.image = [UIImage imageNamed:@"vip"];
     if (!self.microBlog.isVip) {
         self.vipView.hidden = YES;
+    }else{
+        self.nameView.textColor = [UIColor redColor];
     }
     self.textView.text = self.microBlog.text;
-    self.pictureView.image = [UIImage imageNamed:self.microBlog.picture];
+    if (self.microBlog.picture!=nil) {
+        self.pictureView.image = [UIImage imageNamed:self.microBlog.picture];
+    }
+    
     
 }
 
@@ -108,13 +115,37 @@
     CGFloat iconY = margin;
     CGFloat iconW = 30;
     CGFloat iconH = 30;
-    self.iconView.frame = CGRectMake(iconX, iconY, iconW, iconH);
-    //计算文本大小
+    CGRect iconFrame =  CGRectMake(iconX, iconY, iconW, iconH);
+    self.iconView.frame = iconFrame;
+    //设置名称
     CGSize nameSize = [CDFrameCalculateUtils sizeWithText:self.microBlog.name maxSize:maxSize fontSize:CDNameFont];
-    CGFloat nameX = iconX+iconW+margin;
+    CGFloat nameX = CGRectGetMaxX(iconFrame)+margin;
     CGFloat nameY = iconY+(iconW - nameSize.height)/2;
-    self.nameView.frame = CGRectMake(nameX, nameY, nameSize.width, nameSize.height);
-    
+    CGRect nameFrame = CGRectMake(nameX, nameY, nameSize.width, nameSize.height);
+    self.nameView.frame = nameFrame;
+    //vip头像设置
+    CGFloat vipX = CGRectGetMaxX(nameFrame)+margin;
+    CGFloat vipY = nameY;
+    CGFloat vipW = 14;
+    CGFloat vipH = 14;
+    CGRect vipFrame = CGRectMake(vipX, vipY, vipW, vipH);
+    self.vipView.frame = vipFrame;
+    //微博内容大小设置
+    CGSize textSize = [CDFrameCalculateUtils sizeWithText:self.microBlog.text maxSize:CGSizeMake(355, MAXFLOAT) fontSize:CDTextFont];
+    CGFloat textX = iconX;
+    CGFloat textY = CGRectGetMaxY(iconFrame)+margin;
+    CGRect textFrame =  CGRectMake(textX, textY, textSize.width, textSize.height);
+    self.textView.frame = textFrame;
+    //微博图片设置
+    if (self.pictureView!=nil) {
+        CGFloat picX = iconX;
+        CGFloat picY = CGRectGetMaxY(textFrame)+margin;
+        CGFloat picW = 100;
+        CGFloat picH = 100;
+        CGRect picFrame = CGRectMake(picX, picY, picW, picH);
+        self.pictureView.frame = picFrame;
+    }
+
     
 }
 
