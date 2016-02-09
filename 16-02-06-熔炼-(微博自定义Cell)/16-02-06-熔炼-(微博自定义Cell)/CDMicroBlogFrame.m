@@ -46,7 +46,8 @@
     CGSize textSize = [CDFrameCalculateUtils sizeWithText:self.microBlog.text maxSize:CGSizeMake(355, MAXFLOAT) fontSize:CDTextFont];
     CGFloat textX = iconX;
     CGFloat textY = CGRectGetMaxY(iconFrame)+margin;
-    CGRect textFrame =  CGRectMake(textX, textY, textSize.width, textSize.height);
+//    CGRect textFrame =  CGRectMake(textX, textY, textSize.width, textSize.height);
+    CGRect textFrame = (CGRect){{textX,textY},textSize};
     _textFrame = textFrame;
     //微博图片设置
     if (self.microBlog.picture!=nil) {
