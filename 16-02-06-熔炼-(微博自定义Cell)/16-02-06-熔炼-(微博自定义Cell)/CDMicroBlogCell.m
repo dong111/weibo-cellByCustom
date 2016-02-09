@@ -55,6 +55,7 @@
         UIImageView *vipView = [[UIImageView alloc]init];
         [self.contentView addSubview:vipView];
         self.vipView = vipView;
+        self.vipView.image = [UIImage imageNamed:@"vip"];
         //微博内容
         UILabel *textView = [[UILabel alloc]init];
         [self.contentView addSubview:textView];
@@ -90,7 +91,6 @@
     CDMicroBlog *microBlog = self.microBlogFrame.microBlog;
     self.iconView.image = [UIImage imageNamed:microBlog.icon];
     self.nameView.text = microBlog.name;
-    self.vipView.image = [UIImage imageNamed:@"vip"];
     if (!microBlog.isVip) {
         self.nameView.textColor = [UIColor blackColor];
         self.vipView.hidden = YES;
