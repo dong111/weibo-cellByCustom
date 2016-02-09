@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@class CDMicroBlog;
+@class CDMicroBlogFrame;
 
 @interface CDMicroBlogCell : UITableViewCell
 
-@property (nonatomic,strong) CDMicroBlog *microBlog;
+@property (nonatomic,strong) CDMicroBlogFrame *microBlogFrame;
 
 //生成可以重用的自定义cell对象方法
 + (instancetype) microBlogCellWithTableView:(UITableView *)tableView;

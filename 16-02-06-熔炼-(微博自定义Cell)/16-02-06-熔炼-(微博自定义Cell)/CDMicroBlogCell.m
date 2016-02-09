@@ -11,6 +11,7 @@
 
 #import "CDMicroBlogCell.h"
 #import "CDMicroBlog.h"
+#import "CDMicroBlogFrame.h"
 #import "CDFrameCalculateUtils.h"
 //类扩展，定义分类
 @interface CDMicroBlogCell ()
@@ -70,36 +71,36 @@
     return self;
 }
 //重写属性setter方法,设置子控件的值
-- (void)setMicroBlog:(CDMicroBlog *)microBlog
+- (void)setMicroBlogFrame:(CDMicroBlogFrame *)microBlogFrame
 {
-    _microBlog = microBlog;
+        _microBlogFrame = microBlogFrame;
     
-    //设置子控件显示内容
-    [self setSubViewsContent];
-    //设置子控件的frame
-    [self setSubViewsFrame];
-    
+        //设置子控件显示内容
+        [self setSubViewsContent];
+        //设置子控件的frame
+        [self setSubViewsFrame];
 }
 
 //设置子控件显示内容
 - (void)setSubViewsContent
 {
-    if (self.microBlog==nil) {
+    if (self.microBlogFrame==nil) {
         return;
     }
-    self.iconView.image = [UIImage imageNamed:self.microBlog.icon];
-    self.nameView.text = self.microBlog.name;
+    CDMicroBlog *microBlog = self.microBlogFrame.microBlog;
+    self.iconView.image = [UIImage imageNamed:microBlog.icon];
+    self.nameView.text = microBlog.name;
     self.vipView.image = [UIImage imageNamed:@"vip"];
-    if (!self.microBlog.isVip) {
+    if (!microBlog.isVip) {
         self.nameView.textColor = [UIColor blackColor];
         self.vipView.hidden = YES;
     }else{
         self.nameView.textColor = [UIColor redColor];
         self.vipView.hidden = NO;
     }
-    self.textView.text = self.microBlog.text;
-    if (self.microBlog.picture!=nil) {
-        self.pictureView.image = [UIImage imageNamed:self.microBlog.picture];
+    self.textView.text = microBlog.text;
+    if (microBlog.picture!=nil) {
+        self.pictureView.image = [UIImage imageNamed:microBlog.picture];
     }
     
     
@@ -109,44 +110,49 @@
 //设置子控件的frame
 - (void) setSubViewsFrame
 {
-    //定义参数间距
-    CGFloat margin = 10;
-    CGSize maxSize = CGSizeMake(MAXFLOAT, MAXFLOAT);
-    //图像
-    CGFloat iconX = margin;
-    CGFloat iconY = margin;
-    CGFloat iconW = 30;
-    CGFloat iconH = 30;
-    CGRect iconFrame =  CGRectMake(iconX, iconY, iconW, iconH);
-    self.iconView.frame = iconFrame;
-    //设置名称
-    CGSize nameSize = [CDFrameCalculateUtils sizeWithText:self.microBlog.name maxSize:maxSize fontSize:CDNameFont];
-    CGFloat nameX = CGRectGetMaxX(iconFrame)+margin;
-    CGFloat nameY = iconY+(iconW - nameSize.height)/2;
-    CGRect nameFrame = CGRectMake(nameX, nameY, nameSize.width, nameSize.height);
-    self.nameView.frame = nameFrame;
-    //vip头像设置
-    CGFloat vipX = CGRectGetMaxX(nameFrame)+margin;
-    CGFloat vipY = nameY;
-    CGFloat vipW = 14;
-    CGFloat vipH = 14;
-    CGRect vipFrame = CGRectMake(vipX, vipY, vipW, vipH);
-    self.vipView.frame = vipFrame;
-    //微博内容大小设置
-    CGSize textSize = [CDFrameCalculateUtils sizeWithText:self.microBlog.text maxSize:CGSizeMake(355, MAXFLOAT) fontSize:CDTextFont];
-    CGFloat textX = iconX;
-    CGFloat textY = CGRectGetMaxY(iconFrame)+margin;
-    CGRect textFrame =  CGRectMake(textX, textY, textSize.width, textSize.height);
-    self.textView.frame = textFrame;
-    //微博图片设置
-    if (self.pictureView!=nil) {
-        CGFloat picX = iconX;
-        CGFloat picY = CGRectGetMaxY(textFrame)+margin;
-        CGFloat picW = 100;
-        CGFloat picH = 100;
-        CGRect picFrame = CGRectMake(picX, picY, picW, picH);
-        self.pictureView.frame = picFrame;
-    }
+    self.iconView.frame = self.microBlogFrame.iconFrame;
+    self.nameView.frame = self.microBlogFrame.nameFrame;
+    self.vipView.frame = self.microBlogFrame.vipFrame;
+    self.textView.frame = self.microBlogFrame.textFrame;
+    self.pictureView.frame = self.microBlogFrame.pictureFrame;
+//    //定义参数间距
+//    CGFloat margin = 10;
+//    CGSize maxSize = CGSizeMake(MAXFLOAT, MAXFLOAT);
+//    //图像
+//    CGFloat iconX = margin;
+//    CGFloat iconY = margin;
+//    CGFloat iconW = 30;
+//    CGFloat iconH = 30;
+//    CGRect iconFrame =  CGRectMake(iconX, iconY, iconW, iconH);
+//    self.iconView.frame = iconFrame;
+//    //设置名称
+//    CGSize nameSize = [CDFrameCalculateUtils sizeWithText:self.microBlog.name maxSize:maxSize fontSize:CDNameFont];
+//    CGFloat nameX = CGRectGetMaxX(iconFrame)+margin;
+//    CGFloat nameY = iconY+(iconW - nameSize.height)/2;
+//    CGRect nameFrame = CGRectMake(nameX, nameY, nameSize.width, nameSize.height);
+//    self.nameView.frame = nameFrame;
+//    //vip头像设置
+//    CGFloat vipX = CGRectGetMaxX(nameFrame)+margin;
+//    CGFloat vipY = nameY;
+//    CGFloat vipW = 14;
+//    CGFloat vipH = 14;
+//    CGRect vipFrame = CGRectMake(vipX, vipY, vipW, vipH);
+//    self.vipView.frame = vipFrame;
+//    //微博内容大小设置
+//    CGSize textSize = [CDFrameCalculateUtils sizeWithText:self.microBlog.text maxSize:CGSizeMake(355, MAXFLOAT) fontSize:CDTextFont];
+//    CGFloat textX = iconX;
+//    CGFloat textY = CGRectGetMaxY(iconFrame)+margin;
+//    CGRect textFrame =  CGRectMake(textX, textY, textSize.width, textSize.height);
+//    self.textView.frame = textFrame;
+//    //微博图片设置
+//    if (self.pictureView!=nil) {
+//        CGFloat picX = iconX;
+//        CGFloat picY = CGRectGetMaxY(textFrame)+margin;
+//        CGFloat picW = 100;
+//        CGFloat picH = 100;
+//        CGRect picFrame = CGRectMake(picX, picY, picW, picH);
+//        self.pictureView.frame = picFrame;
+//    }
 
     
 }
